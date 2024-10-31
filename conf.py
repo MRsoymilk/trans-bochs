@@ -39,7 +39,7 @@ html_theme = 'sphinx_rtd_theme'
 html_static_path = ['_static']
 
 
+languages = ['en', 'zh_CN']
 locale_dirs = ['locale/']
 gettext_compact = False
-
 
