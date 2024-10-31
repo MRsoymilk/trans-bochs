@@ -5,17 +5,21 @@
 
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
+import os
 
 project = 'docs'
 copyright = '2024, milk'
 author = 'milk'
 release = '0.1'
 
+html_output_path = os.getenv('READTHEDOCS_OUTPUT', '_build/html')
+
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
 extensions = [
     'sphinx.ext.duration',
+    'sphinx.ext.autodoc'
 ]
 
 templates_path = ['_templates']
